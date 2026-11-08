@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+
+a {
+  color: #009966;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Top section */
+.intro {
+  padding: 3rem 1rem 2rem;
+}
+
+.intro h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  max-width: 25rem;
+  margin-bottom: 1rem;
+}
+
+/* Grey bands */
+.band {
+  height: 2.5rem;
+  background-color: #666666;
+  border-top: 4px solid #999999;
+}
+
+/* Yellow tab section */
+.about {
+  padding: 0.25rem 1rem 1.5rem 0;
+}
+
+.tab {
+  display: inline-block;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #ffbf00;
+  border-bottom: 4px solid #d99e00;
+}
+
+.about p {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .intro {
+    padding: 2.5rem 1.25rem 2rem;
+  }
+
+  .about {
+    padding-right: 1.25rem;
+  }
+
+  .tab {
+    display: block;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .about p {
+    padding-left: 1.25rem;
+  }
+}

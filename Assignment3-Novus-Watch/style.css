@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #a7a8cd;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 23rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.badge {
+  position: absolute;
+  top: 0.4rem;
+  left: -0.5rem;
+  padding: 0.3rem 0.75rem;
+  background-color: #fdf1b5;
+  border-radius: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.content {
+  padding: 1rem 1rem 1.25rem;
+}
+
+.content h1 {
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.content h1 span {
+  font-size: 0.8rem;
+  color: #555555;
+}
+
+.content p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  body {
+    padding: 1rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+  }
+}

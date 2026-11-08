@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout for the WP Pusher Freelancer plan.">
+  <title>Checkout | WP Pusher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#"><img class="logo" src="logo.png" alt="WP Pusher"></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Learn more</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#" class="account">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="checkout">
+
+    <section class="form-side">
+      <h1>Checkout</h1>
+
+      <form action="#" method="post">
+
+        <div class="step">
+          <h2><span class="number">1</span> Your Basic Information</h2>
+          <div class="row">
+            <div class="field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Jane" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Doe" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="field email">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="janedoe@example.com" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="step">
+          <h2><span class="number">2</span> Your Payment Information</h2>
+          <label for="card-number">Credit Card</label>
+          <div class="card-box">
+            <input type="text" id="card-number" class="card-number" name="card-number" placeholder="Card Number" inputmode="numeric" autocomplete="cc-number" required>
+            <input type="text" class="card-expiry" name="card-expiry" placeholder="MM / YY" aria-label="Expiry date" autocomplete="cc-exp" required>
+            <input type="text" class="card-cvc" name="card-cvc" placeholder="CVC" aria-label="CVC security code" autocomplete="cc-csc" required>
+          </div>
+        </div>
+
+        <div class="step buy">
+          <button type="submit">Buy WP Pusher</button>
+          <p class="help"><span class="icon">?</span> <span><strong>Need any help?</strong> Don&rsquo;t hesitate to <a href="#">contact support</a>!</span></p>
+          <img class="stripe" src="stripe.png" alt="Powered by Stripe">
+        </div>
+
+      </form>
+    </section>
+
+    <aside class="plan-side">
+      <h2>Freelancer</h2>
+      <p class="price"><span class="dollar">$</span><span class="amount">99</span> <span class="per">/ year</span></p>
+      <p class="renews">Automatically renews after 1 year</p>
+
+      <ul class="features">
+        <li><span class="icon">&#10003;</span> <span>Use on <strong>5</strong> client sites</span></li>
+        <li><span class="icon">&#10003;</span> <span>Private repositories</span></li>
+        <li><span class="icon">&#10003;</span> <span>Email support</span></li>
+      </ul>
+
+      <p class="agency">Need <strong>20</strong> client sites?</p>
+      <p class="agency"><a href="#">Switch to the <em>Agency</em> plan</a>.</p>
+
+      <hr>
+
+      <blockquote>
+        <p>FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue, and the customer support is awesome!</p>
+        <footer>
+          <img class="avatar" src="avatar.png" alt="Kirk Beard">
+          <cite>Kirk Beard</cite>
+        </footer>
+      </blockquote>
+    </aside>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2018 WP Pusher IVS &middot; <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>
